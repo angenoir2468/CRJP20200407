@@ -3,14 +3,24 @@
 
 puts "Quelle est ton année de naissance ?"
 
-annee_naissance = gets.chomp.to_i
-annee_en_cours = annee_naissance + b
-b = annee_naissance + i
-aujourdhui = 2020
+a = gets.chomp.to_i
+b = 2020
 
 puts "Regarde toutes les années passées depuis ton année de naissance jusqu'à aujourd'hui :"
 i = 0
-while aujourdhui >= annee_en_cours
-	puts "En #{annee_en_cours} tu avais #{b} an(s)"
+while b >= (a + i)
+	print " #{a + i} "
 	i = i+1
 end
+
+puts " "
+
+i = 0
+while a + i <=b
+	print  "Tu avais "
+	print "#{i}"
+	print " an(s) en " 
+	puts "#{a + i}"
+	i = i+1
+end
+
